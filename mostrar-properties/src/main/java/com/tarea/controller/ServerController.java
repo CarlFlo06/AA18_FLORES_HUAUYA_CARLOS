@@ -2,21 +2,23 @@ package com.tarea.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.tarea.pais.paisProperties;
 
 @RestController
+@RefreshScope
 public class ServerController {
 	
-	@Value("${label.country.chile}")
+	@Value("${label.country}")
 	private String paisC;
 	
-	@Value("${label.country.uruguay}")
+	@Value("${label.country}")
 	private String paisU;
 	
-	@Value("${label.country.peru}")
+	@Value("${label.country}")
 	private String paisP;
 	//@Autowired
 	//private paisProperties pais;

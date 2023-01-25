@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: application-prod
+  cloud:
+    config:
+      uri: http://localhost:8888
+
