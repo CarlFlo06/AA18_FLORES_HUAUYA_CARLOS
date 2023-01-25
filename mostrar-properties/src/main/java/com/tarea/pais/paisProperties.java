@@ -1,4 +1,4 @@
-package com.tarea.pais;
+/*package com.tarea.pais;
 
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -37,4 +37,4 @@ public class paisProperties {
 		this.peru = peru;
 	}
 	
-}
+}*/

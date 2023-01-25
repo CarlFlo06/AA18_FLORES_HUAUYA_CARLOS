@@ -1,6 +1,9 @@
 spring:
   application:
-    name: application-prod
+    name: todos-properties
+#spring:
+  #profiles:
+    #active: dev, qa, prod
   cloud:
     config:
       uri: http://localhost:8888

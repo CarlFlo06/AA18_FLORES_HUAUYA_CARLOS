@@ -6,23 +6,25 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.tarea.pais.paisProperties;
-
 @RestController
 @RefreshScope
 public class ServerController {
 	
-	@Value("${label.country}")
+	/*@Value("${label.country}")
+	private String pais;
+	@GetMapping("/pais")
+	public String pais() {
+		return pais;
+	}*/
+	@Value("${label.country.chile}")
 	private String paisC;
 	
-	@Value("${label.country}")
+	@Value("${label.country.uruguay}")
 	private String paisU;
 	
-	@Value("${label.country}")
+	@Value("${label.country.peru}")
 	private String paisP;
-	//@Autowired
-	//private paisProperties pais;
-	
+
 	@GetMapping("/chile")
 	public String chile() {
 		return paisC;
